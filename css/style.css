@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+ 
+* {
+     margin: 0;
+     padding: 0;
+}
+
+.header-area {
+    height: 80px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.main-menu .open-btn {
+    font-size: 30px;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.offcanvas-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgb(26, 2, 43);
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all .4s ease;
+}
+
+.offcanvas-menu.active {
+    transform: translateX(0);
+}
+
+.close-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.offcanvas-menu ul {
+    width: 100%;
+}
+
+.offcanvas-menu ul li {
+    list-style: none;
+}
+
+.offcanvas-menu ul li a {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
+    text-decoration: none;
+    padding: 15px 0 15px 7vw;
+    transition: all .4s ease;
+}
+
+.offcanvas-menu ul li a:hover {
+    background: rgb(69, 21, 243);
+}
